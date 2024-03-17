@@ -72,11 +72,6 @@ function miner.is_enough_money(self)
 	return self.m_moneyinbank >= config.comfort_level
 end
 
--- 没有足够的钱了
-function miner.is_not_enough_money(self)
-	return self.m_moneyinbank < config.comfort_level
-end
-
 -- 增加疲劳值
 function miner.inc_fatigue(self)
 	self.m_fatigue = self.m_fatigue + 1
